@@ -1,0 +1,22 @@
+{
+"configurations": [
+{
+"name": "mingw-debug",
+"generator": "Ninja",
+"configurationType": "Debug",
+"inheritEnvironments": [ "msvc_x64" ],
+"buildRoot": "${projectDir}\\build\\vs2019-mingw-debug",
+"cmakeCommandArgs": "-DUSE_OPENGL=ON -DENABLE_PYTHON=ON",
+"variables": [
+{
+"name": "CMAKE_TOOLCHAIN_FILE",
+"value": "${projectDir}\\vs-mingw.cmake",
+"type": "FILEPATH"
+}
+],
+"env": {
+"PATH": "C:\\msys64\\ucrt64\\bin;${env.PATH}"
+}
+}
+]
+}
